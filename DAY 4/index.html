@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+
+<body>
+    <ul>
+        <li>first element</li>
+        <li> second element</li>
+        <li> third element</li>
+    </ul>
+    <script>
+        //root node 
+        // console.log( document.documentElement)
+        // console.log( document.body)
+        // console.log( document.head)
+        // //childrens 
+        // console.log( document.head.childNodes)
+        // console.log( document.children)
+        // for (node of document.body.children) {
+        //     console.log(document.body.children) 
+        //     }
+        //     // console.log(document.body.firstChild)
+        //     // console.log(document.body.lastChild)
+        //     console.log(document.body.firstElementChild)
+        //     console.log(document.body.lastElementChild)
+        const childrenOfBody = Array.from(document.body.children);
+        console.log(childrenOfBody)
+
+    </script>
+</body>
+</html>
