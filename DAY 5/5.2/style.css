@@ -1,0 +1,20 @@
+.parent {
+    width: 400px;
+    height: 400px;
+    background: coral;
+    padding: 16px;
+}
+
+.child {
+    background: blueviolet;
+    width: 200px;
+    height: 200px;
+}
+
+
+input:invalid{
+    outline: 2px solid coral
+}
+input:valid{
+    outline: 2px solid lightgreen;
+}
