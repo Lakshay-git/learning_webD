@@ -6,7 +6,8 @@
     <title>CSS specificity & senmatic HTML</title>
     <style>
         #id-level{
-            color:palevioletred
+            color:palevioletred;
+            position: relative;
         }
         .class-level{
             color:coral
@@ -26,11 +27,25 @@
         width:100%;
         background-color: beige;
        }
+       p::after{
+        content: "🤣";
+        color: brown;
+        
+       }
+       p::before{
+        content: "🤣";
+        color: brown;
+        
+       }
+       input::placeholder{
+        color: blue;
+       }
         
     </style>
 </head>
 <body>
     <p style="color: indigo;"    class="class-level" id="id-level">this is a para for testing specificity </p>
+    <input type="text" placeholder="this is a placeholder ">
     <div class="box">
         <div class="box child">
 
