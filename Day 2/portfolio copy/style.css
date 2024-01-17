@@ -17,12 +17,16 @@ header{
 header nav>a{
     margin: 16px;
     text-decoration: none;
+    padding: 8px;
 }
 
-/* header nav > a :hover {
+header nav > a :hover {
     margin: 16px;
     text-decoration: underline;
-} */
+}
+header nav > a :visited {
+    background-color: blanchedalmond ;
+}
 
 footer{
     padding: 16px;
@@ -90,5 +94,8 @@ td{
 #contact label {
     display: block;
     font-weight: 600;
+}
+#contact input:focus{
+    outline: 2px solid green;
 }
 

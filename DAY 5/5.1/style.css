@@ -10,3 +10,11 @@
     width: 200px;
     height: 200px;
 }
+
+
+input:invalid{
+    outline: 2px solid coral
+}
+input:valid{
+    outline: 2px solid lightgreen;
+}
