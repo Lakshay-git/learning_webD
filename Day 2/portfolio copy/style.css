@@ -11,6 +11,11 @@ html{
 
 header{
     padding: 16px ;
+    position: sticky;
+    top: 0;
+    border: 1px solid white;
+    background: hsl(0, 0%, 100%);
+    border-bottom: 4px solid ;
 
      
 }
@@ -20,9 +25,8 @@ header nav>a{
     padding: 8px;
 }
 
-header nav > a :hover {
-    margin: 16px;
-    text-decoration: underline;
+header nav > a :last-child {
+    margin-right: revert;
 }
 header nav > a :visited {
     background-color: blanchedalmond ;
@@ -97,5 +101,34 @@ td{
 }
 #contact input:focus{
     outline: 2px solid green;
+}
+
+
+
+
+.mobile-nav{
+    display: none;
+}
+@media (width <500px){
+    .default-nav{
+        display:none ;
+    }
+    .mobile-nav{
+        display: revert;
+
+    }
+    #menu-button{
+        display:block;
+        background: rgb(215, 237, 182);
+        border-radius: 8px;
+        margin-left: auto;
+    }
+
+}
+
+@media (width<=450px){
+    #profile-image{
+        width:100%;
+    }
 }
 
