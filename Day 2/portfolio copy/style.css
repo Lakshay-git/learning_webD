@@ -123,12 +123,30 @@ td{
         border-radius: 8px;
         margin-left: auto;
     }
+    section.menu{
+        display : revert;
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background: wheat;
+
+    }
+    #close-menu{
+        position: absolute;
+        right: 16px;
+        top:16px;
+        background: transperent;
+        font-size: x-large;
+        border: none;
+    }
 
 }
 
 @media (width<=450px){
     #profile-image{
-        width:100%;
+        width:100%; 
     }
 }
 
