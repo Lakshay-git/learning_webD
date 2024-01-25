@@ -1,0 +1,13 @@
+.body{
+    padding: 16px;
+}
+
+.box{
+    background-color: brown;
+    height: 400px;
+    width: 400px;
+    margin: 32px auto;
+}
+.box:hover{
+    transform: scale(2);
+}
