@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+    padding: 16px;
+}
+
+.box{
+    background-color: brown;
+    height: 300px;
+    width: 100px;
+    /* margin: 32px auto; */
+    margin: 10px;
+}
+.box.second{
+    flex : 2;
+
+}
+.box.third{
+    flex: 1 1 100px;
+}
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    /* max-height: 600px; */
+    height: 100vh;
+    /* overflow: hidden; */
+    /* flex-wrap: wrap; */
+    gap: 18px;
+    justify-content:center ;
+    align-items: center;
+
+}
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="box"></section>
+        <section class="box second"></section>
+        <section class="box third "></section>
+        <!-- <section class="box"></section>
+        <section class="box"></section>
+        <section class="box"></section> -->
+    </main>
+   
+</body>
+</html>
