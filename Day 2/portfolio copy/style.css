@@ -103,6 +103,14 @@ td{
     outline: 2px solid green;
 }
 
+#menu-button-ka-lund {
+    display:none;
+    background: rgb(0, 0, 0);
+    color: white;
+    border-radius: 8px;
+    /* margin-left: auto; */
+}
+
 
 
 
