@@ -50,7 +50,7 @@ function sum() {
     for (let index = 0; index < arguments.length; index++) {
         total += arguments[index];
     }
-    
+
     return total;
 }
 
@@ -64,18 +64,50 @@ greetPerson.apply(person, ["hello"]);
 //function borrowing
 
 let doctor = {
-    firstName : "manthan",
-    lastName : "soni"
+    firstName: "manthan",
+    lastName: "soni"
 
 }
 console.log(person.getName.call(doctor))
 
 //function currying
- 
-function logData(date, data){
+
+function logData(date, data) {
     console.log(date, data);
 }
 
 logData(new Date(), "this data to be logged")
 
-let logNow = logData.bind
+
+let logNow = logData.bind(null, new Date());
+logNow("this is another info to be logged  ")
+logNow("some other data ")
+
+//
+
+// function add(firstNum){
+//     return function (secondNum){
+//         console.log(firstNum + secondNum)
+//         return firstNum + secondNum;
+//     }
+// }
+
+
+// add(5)(2)
+// add(5)(7)
+// add(6)(9)
+
+function multiply(firstNum, secondNum) {
+    return firstNum * secondNum;
+}
+
+let doubleTheNumber = multiply.bind(null, 2);
+console.log(doubleTheNumber(2))
+console.log(doubleTheNumber(3));
+
+// default values for params
+
+function printSomeText(text = " devnest"){
+    console.log(text);
+}
+printSomeText();
