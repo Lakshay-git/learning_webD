@@ -16,18 +16,18 @@
 //destructing 
 
 let anotherPerson = {
-    firstName : "foo", lastName : "bar",
-    address:  {
+    firstName: "foo", lastName: "bar",
+    address: {
         city: "Pune",
         state: " Maharashtra "
     }
 }
 
 
-let {firstName} = anotherPerson; 
+let { firstName } = anotherPerson;
 console.log(firstName);
 
-const fruits = ["Apple","Kiwi","Orange"]
+const fruits = ["Apple", "Kiwi", "Orange"]
 
 console.log(fruits[0])
 
@@ -41,12 +41,26 @@ console.log(`coming from destru array ${Orange}`);
 
 //rest operator  -.... => ellipsis notation 
 
-const {firstName: name,...rest} = anotherPerson;
-console.log(name , rest );
+const { firstName: name, ...rest } = anotherPerson;
+console.log(name, rest);
 
 console.log(name, rest);
-const[apple,...rem] = fruits;
-console.log(apple, rem );
+const [apple, ...rem] = fruits;
+console.log(apple, rem);
 
 
-const 
+
+
+const anotherListofFruits = ["strawberry", "pineapple"];
+
+const moreFruits = [...fruits, ...anotherListofFruits];
+console.log(moreFruits);
+
+
+//arrow function 
+
+function sum(firstNum, secondNum){
+    return firstNum + secondNum;
+}
+
+let sumArrow = (firstName,secondNum) => firstNum + secondNum; 
