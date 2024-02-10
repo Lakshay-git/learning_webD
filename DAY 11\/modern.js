@@ -10,8 +10,8 @@
 
 //shorthand property
 
-// let person = {firstName, age };
-// console.log(person);
+let person = {firstName, age };
+console.log(person);
 
 //destructing 
 
@@ -64,3 +64,18 @@ function sum(firstNum, secondNum){
 }
 
 let sumArrow = (firstName,secondNum) => firstNum + secondNum; 
+
+//optional chaining 
+
+let person = {
+    firstName: "j", lastName = "D", age: 28
+};
+
+if(Person?.address?.city){
+    console.log(anotherPerson.address.city);
+}
+
+//nullish coolescing operator 
+
+let age = person.age ?? 20;
+console.log(age);
