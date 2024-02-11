@@ -21,3 +21,4 @@ promise
 // rejected state - error
 // pending state - neither fullfilled nor rejected 
 // setteled state - it represents -fulfilled state / rejected state 
+// comment
