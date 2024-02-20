@@ -3,9 +3,9 @@ const endDate = "14 April 2024 12:01 AM"
 document.getElementById("end-Date").innerText = endDate;
 const inputs = document.querySelectorAll("input")
 
-// const clock = () => {
+// // const clock = () => {
 
-// }
+// // }
 
 
 
@@ -34,4 +34,8 @@ setInterval(
     },
     1000
 )
+
+
+
+
 
