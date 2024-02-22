@@ -8,7 +8,7 @@ const question = [{
     'Correct': 'a'
 },
 {
-    'que': " What country has won the most World Cups? ",
+    'que': " Which country has won the most World Cups? ",
 
     'a': 'india ',
     'b': 'brazil',
@@ -29,10 +29,15 @@ const question = [{
 let index = 0;
 let total = question.length;
 let right = 0;
-wrong = 0;
-const optionInputs = document.querySelectorAll('.options')
+    wrong = 0;
 const quesBox = document.getElementById("quesBox")
+const optionInputs = document.querySelectorAll('.options')
+
 const loadQuestion = () => {
+    if (index === total){
+        return endQuiz()
+    }
+    
     reset();
     const data = question[index]
     
@@ -47,9 +52,10 @@ const loadQuestion = () => {
 
 
 const submitQuiz = () => {
-    const data = question[index]
+    const data = question[index];
     const ans = getAnswer()
-    if (ans === data.correct) {
+    console.log(ans, data.Correct)
+    if (ans === data.Correct) {
         right++;
     } else {
         wrong++;
@@ -60,14 +66,16 @@ const submitQuiz = () => {
 }
 
 const getAnswer = () => {
+    let answer;
     optionInputs.forEach(
         (input) => {
             if (input.checked) {
-                return input.value;
+                answer = input.value;
+            
             }
         }
     )
-
+    return answer;
 }
 
 const reset = () => {
@@ -77,7 +85,17 @@ const reset = () => {
         }
     )
 }
+const endQuiz = () => {
+    document.getElementById("box").innerHTML = `
+    <div style="text-align:center">
+    <h3> Thank you for playing the Quiz  </h3>
+    <h2>${right} / ${total} are correct  </h2>
+    </div>
+    `
 
+    
+    
+}
 
 //initial call 
 loadQuestion()
