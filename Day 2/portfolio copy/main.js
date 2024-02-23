@@ -82,3 +82,4 @@ function clearLetters() {
 }
 
 printLetters(phrases[phraseIndex]);
+//making portfolio 
