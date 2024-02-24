@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div class="main">
+
+
+
+        <!-- <h1>Password Generator App</h1> -->
+        <div class="box">
+            <span id="pass-box"> Testing</span>
+            <div class="row">
+                <div class="left">
+                    Password length
+                </div>
+                <div class="right">
+                    <input type="number" id="total-char" max="30" min="2" value="2" />
+                </div>
+                <div class="row">
+                    <label for="upper-case">
+                        <div class="left">
+                            contains upper-case
+                        </div>
+                    </label>
+                    <div class="right">
+                        <input type="checkbox" id="upper-case" checked/>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <label for="lower-case">
+                        <div class="left">
+                            contains lower-case
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <button id="btn">Generate</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
